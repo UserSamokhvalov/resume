@@ -6,21 +6,28 @@
     <meta name="keywords" content="samokhvalov, resume">
     <meta name="description" content="сайт - резюме Самохвалова">
     <title>Samokhvalov Resume</title>
+    <link rel="stylesheet" href="resume.css">
 </head>
 <body>
-    <img src="74F48FAD-48C5-432B-9CFC-F927A23C886A.JPG" alt="photo" width="250">
+    <div class="container">
+
+    <div class="info">
+    <img src="74F48FAD-48C5-432B-9CFC-F927A23C886A.JPG" alt="photo" class="avatar">
 <h1>Самохвалов Максим</h1>
 
 <p>В настоящее время занимают должность РМ в digital-студии</p>
-<p>
+
 <a href="https://vk.com/samokhvalof" target="_blank">VK</a>
 <a href="https://500px.com/p/samokhvalov" target="_blank">500px</a>
 </p>
+    </div>
+    
+    <div class="card-1">
 <h2>Опыт работы</h2>
-<table width="400">
+<table width="400" class="table">
 <thead>
 <th>Название компании</th>
-<th>Заниманиемая должность</th>
+<th>Занимаемая должность</th>
 <th>Период работы</th>
 </thead>
 <tbody>
@@ -42,35 +49,58 @@
 
 </tbody>
 </table>
+</div>
 
+<div class="card-2">
+<h3>Курсы повышения квалификации и обучение</h3>
+<ul type="square" class="list">
+<li>Фотожурналистика и документальная фотография; Академия фотографии "Фотографика"</li>
+<li>История дизайна; НИУ ВШЭ</li>
+<li>CS50B IT-технологии; First digital institute</li>
+<li>Основы менеджмента в современной организации; ИТМО</li>
+<li>HTML,CSS; Нетология</li>
+</ul>
+</div>
 
+<div class="card-3">
 <h3>Список хобби и увлечений:</h3>
-<ul type="square">
+<ul type="square" class="list">
 <li>Фотография</li>
 <li>Путешествия</li>
 <li>Технологии</li>
 <li>Сноубодинг</li>
 </ul>
+</div>
 
-<h4>Связаться со мной</h4> 
-<form action="/">
-<div>
+
+<form action="/" class="form">
+    <h4>Связаться со мной</h4> 
+
+    <div class="form-row">
+
+    
+<div class="form-group">
     <label for="name">Ваше имя</label>
     <input type="text" id="name" placeholder="Введите имя">
     </div> 
 
-    <div>
+    <div class="form-group">
     <label for="email">Ваш email</label>
     <input type="email" id="email" placeholder="Введите email">
     </div>
+</div>
    
-    <div>
+    <div class="form-group">
         <label for="message">Ваше сообщение</label>
-        <br>
+        
         <textarea id="message" cols="25" rows="5" placeholder="Ваше сообщение"></textarea>
             </div>
             <br>
-    <input type="submit" value="Отправить форму">
+            <div class="btn">
+    <input type="submit" value="Отправить форму" class="btn">
 </form>
+</div>
+</div>
+
 </body>
 </html>
